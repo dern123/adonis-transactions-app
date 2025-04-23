@@ -1,0 +1,12 @@
+{
+  "extends": "@adonisjs/tsconfig/tsconfig.app.json",
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "./build",
+    "baseUrl": ".",
+    "paths": {
+      "@ioc:Adonis/Addons/Redis": ["./contracts/redis"]
+    }
+  },
+  "include": ["app", "contracts", "start"]
+}
